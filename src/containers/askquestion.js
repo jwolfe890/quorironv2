@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { createQuestion } from '../actions/questions';
+import '../App.css';
+
 
 class AskQuestion extends Component {
 

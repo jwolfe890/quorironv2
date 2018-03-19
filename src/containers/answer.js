@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import '../App.css';
+import { Button } from 'react-bootstrap';
+
 import { changeAnswer } from '../actions/answers';
 import AnswerCard from '../components/answercard'
 

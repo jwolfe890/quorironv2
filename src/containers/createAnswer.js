@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Answers from './answers'
 import { createAnswer } from '../actions/answers'
+import { Button } from 'react-bootstrap';
+
 
 class CreateAnswer extends Component {
   constructor(props) {
@@ -38,7 +40,7 @@ class CreateAnswer extends Component {
           </textarea>
         </div>
         <div>
-          <button type="submit">Add Answer</button>
+          <Button style={{ backgroundColor: 'green', borderColor: '#b92b27', color: 'white' }}type="submit">Add Answer</Button>
         </div>
       </form>
       <Answers question={this.props.question} />

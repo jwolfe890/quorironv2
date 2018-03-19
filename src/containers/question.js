@@ -3,7 +3,8 @@ import { connect } from 'react-redux';
 import CreateAnswer from './createAnswer'
 import {Redirect} from 'react-router-dom';
 import QuestionCard from '../components/QuestionCard'
-
+import { Button } from 'react-bootstrap';
+import '../App.css';
 import { getQuestion } from '../actions/questions'
 import { deleteQuestion } from '../actions/questions'
 import { getAnswers } from '../actions/answers'
@@ -35,7 +36,7 @@ class Question extends Component {
         { question ?
         <div>
           <QuestionCard question={question} />
-          <button onClick={this.handleDelete}>Delete</button>
+          <Button className="delete" style={{ backgroundColor: '#b92b27', borderColor: '#b92b27', color: 'white' }} onClick={this.handleDelete}>Delete</Button>
           <CreateAnswer question={question} />
         </div>
         : "Loading" 
